@@ -1,0 +1,96 @@
+mkdir -> cria uma pasta
+
+mkdir + nomedapasta + enter
+
+ls -> ve os arquivos que tem na pasta
+
+npm init -y
+
+cria um package json
+
+que vai guardar a versão das dependencias do projeto
+
+npm install express -> instala o express
+
+
+express é basicamente um micro framework, que ele vai ajudar a lidar com rotas e views
+
+- rotas são os endereços da url que o usuario vai poder acessar na nossa API
+
+-views são as formas de vizualização
+
+comando "code ." -> abre a pasta onde está no vscode
+
+node server.js -> executa o server 
+
+npm install -D nodemon => instala o nodemon como dependencia
+
+devDependencies => é basicamente dependencias utilizadas apenas em um ambiente de desenvolvimento,
+ou seja, enquanto tiver criando a aplicação
+
+ criar dentro do package.json -> "dev": "nodemon server.js" dentro do "Scripts": {  }
+
+npm run -> serve para executar os scripts dentro do package.json
+
+npm run dev - executa o nodemon
+
+após instalação do docker
+
+executar o comando para instalar o mongodb
+
+docker pull mongo (e deixar instalando)
+
+docker run --name mongodb -p 27017:27017
+
+primeiro 27 acessa a porta da minha maquina
+segundo 27 acessa a porta da maquina virtual
+
+Robo 3T -> baixar
+
+criar um server nele, deixando a mesma porta que foi criado no docker
+
+Robo 3T -> serve apenas para verificar se os dados estão sendo criados
+
+para ver as imagens do docker que estão paradas passa o seguinte comando
+
+docker ps -a
+
+para iniciar a imagem criada o seguinte comando 
+
+docker start "nome"
+Ex: docker start mongodb
+
+npm install mongoose
+
+mongoose é um ORM de bancos não relacionais
+
+ORM é basicamente ele incapsula a lógica das operações do banco de dados através do código
+
+que ao invés de utilizarmos a linguagem do banco de dados, utilizamos apenas a linguagem javascript para 
+fazer as operações como INSERT, DELETE, UPDATE e etc.
+
+O model dentro do modelo MVC, ele representa basicamente uma tabela no banco de dados, 
+ou uma forma, estrutura de dados que irá ser gravado dentro do banco de dados
+
+As tabelas do model, deve ser criadas sempre em ingles
+
+Schema é basicamente, quais são os campos que um produto pode ter e que tipo de valores esses
+campos vão salvar
+
+
+npm install require-dir 
+ela faz o papel de require em cada arquivo, pra não precisar ficar dando require manual
+
+JSON é uma estrutura de dados
+é fácil de ler e de alterar dados dentro de uma estrutura
+
+npm install mongoose-paginate
+Paginação do mongoose
+
+npm install cors
+instala o cors na aplicação
+
+após o código de Paginação, colocar no link do index la no insomnia o seguinte parametro:
+/products?page=1 -> página 1
+/products?page=2 -> página 2
+
